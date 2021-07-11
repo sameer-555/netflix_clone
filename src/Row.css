@@ -1,0 +1,44 @@
+.row {
+  /* to create margin between our rows  */
+  color: white;
+  margin-left: 20px;
+}
+
+.row_posters {
+  /* this help while inling the images */
+  display: flex;
+  /* hiding scroll option on y axis */
+  overflow-y: hidden;
+  /* adding scroll option on y axis */
+  overflow-x: scroll;
+  /* adding padding below so images wont crop out  */
+  padding: 20px;
+}
+
+/* telling all the browsers to hide the scroll bar but keep the functionality */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  /* maximum height of the image */
+  max-height: 100px;
+  /* the hover on element is not snappy and have transition period */
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+
+.row_poster:hover {
+  /* when you hover over it the size of image will increase  */
+  transform: scale(1.08);
+}
+/* setting the hight of incoming netflix original poster */
+.row_posterLarge {
+  max-height: 250px;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.09);
+}

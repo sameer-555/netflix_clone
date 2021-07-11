@@ -1,0 +1,37 @@
+.nav {
+  /* navbar wont move after scrolling  */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  padding: 20px;
+  /* need to check z index  */
+  z-index: 1;
+  /* flex for setting it in a row  */
+  display: flex;
+  /* for spacing in between images  */
+  justify-content: space-between;
+  /* Animations */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav_logo {
+  /* if position is fixed then it wont move from it position even after scrolling  */
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  /* containst the image in set height and length */
+  object-fit: contain;
+}
+
+.nav_avatar {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  object-fit: contain;
+}
+
+.nav_black {
+  background-color: #111;
+}
